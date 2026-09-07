@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the 390px mobile view provided:\n\n**1) Hero Section:** Looks **good**. The text is large, readable, and well-spaced. The hierarchy (Headline -> Subtext -> CTA buttons) is clear.\n\n**2) Logo Visibility:** **Yes**, the circular \"EMRAIS\" logo is clearly visible in the top-left corner with the company name beside it.\n\n**3) Hamburger Menu Icon:** **Yes**, there is a clear hamburger menu icon (three horizontal lines) in the top-right corner.\n\n**4) Layout Issues:**\n*   **No major issues.** The layout is clean and responsive.\n*   **Minor observation:** The footer contact information (location, phone, email) is quite large for a footer, taking up significant screen space, but it is legible and not broken.\n*   The \"N\" icon at the bottom left appears to be a chat widget and is positioned correctly without obscuring important content.\n\n**Verdict:** The mobile view is well-optimized and functional.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1788807208,
+  "id": "202609080253240dbaa96d68814074",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609080253240dbaa96d68814074",
+  "usage": {
+    "completion_tokens": 214,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 453,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 667
+  }
+}

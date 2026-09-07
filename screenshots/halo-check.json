@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Yes, the stacked project cards have a distinct **golden-yellow glowing border** (halo effect) around their edges, giving them a luminous appearance.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1788812710,
+  "id": "202609080425089966041563bb4467",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609080425089966041563bb4467",
+  "usage": {
+    "completion_tokens": 32,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2782,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2814
+  }
+}

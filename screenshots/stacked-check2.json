@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Yes, the right side features a stack of cards displaying a construction photo of a \"Contemporary Family Duplex.\" There is a gold badge in the top right corner of the card labeled \"OUR WORK\" with a star icon. Hint text at the bottom reads \"Hover to explore our projects.\" The card also includes details like the completion year (2022) and location (Kaduna State).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1788810627,
+  "id": "2026090803501954abd66f9bc64ecd",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026090803501954abd66f9bc64ecd",
+  "usage": {
+    "completion_tokens": 81,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2769,
+    "prompt_tokens_details": {
+      "cached_tokens": 7
+    },
+    "total_tokens": 2850
+  }
+}

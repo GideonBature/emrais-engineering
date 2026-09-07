@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on visual variety, quality, and the scale of each project, here are the best 3 images to use:\n\n*   **Project 1 (60 Units of 5-Bedroom Duplexes - Life Camp): Use Image 1.** This is a large, multi-story block building that visually represents a high-density development of 60 units. It looks clean and substantial.\n*   **Project 2 (12 Units of 4-Bedroom Residences - Kaduna): Use Image 5.** This shows a large, multi-unit residential building (likely a block of flats or terraced duplexes) that fits the \"12 units\" scale well. It provides good variety from the first image while maintaining a sense of a larger development.\n*   **Project 3 (4 Units of 5-Bedroom Duplexes - Apo 3): Use Image 2.** This is a high-quality photo of an upscale, detached-style duplex. It perfectly suits a small, exclusive project of only 4 luxury units.\n\n**(Images 3 and 4 were excluded because Image 3 is too similar to Image 2 but lower quality/cluttered, and Image 4 shows a building under construction with scaffolding, which is less appealing for a project card.)**",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1788811681,
+  "id": "202609080407538d447dd14bbb4347",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609080407538d447dd14bbb4347",
+  "usage": {
+    "completion_tokens": 264,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 8086,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 8350
+  }
+}

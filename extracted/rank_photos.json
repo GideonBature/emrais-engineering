@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Here is the ranking from best to worst for a professional stacked card effect:\n\n**1. Image 1 (image289)**\nClean, symmetrical facade with a finished, polished look and excellent color contrast.\n\n**2. Image 4 (image281)**\nModern architectural design that looks high-end, despite some minor construction clutter in the foreground.\n\n**3. Image 2 (image294)**\nDecent structure and color palette, but slightly cluttered by the parked car and utility pole.\n\n**4. Image 5 (image290)**\nThe building itself is nice, but the muddy foreground and distracting cars lower the visual quality.\n\n**5. Image 3 (image272)**\nLooks like an active, messy construction site with bamboo scaffolding, lacking a \"finished product\" appeal.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1788810470,
+  "id": "2026090803474486aaf40e58d742f6",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026090803474486aaf40e58d742f6",
+  "usage": {
+    "completion_tokens": 166,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 8013,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 8179
+  }
+}

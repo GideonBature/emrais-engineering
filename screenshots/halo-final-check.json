@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Yes. The stacked project card on the right features a glowing golden light/halo around its edges, creating a luminous border effect that makes it stand out against the dark background.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1788812838,
+  "id": "20260908042716131773d530184477",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260908042716131773d530184477",
+  "usage": {
+    "completion_tokens": 37,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2763,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2800
+  }
+}

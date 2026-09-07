@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the screenshot, **the submission does not appear to be successful yet**, and **there is no success toast notification visible**.\n\nHere is what I see:\n\n*   **Form State:** The contact form on the right is still fully populated with the user's data (Subject: \"Project Inquiry\", Message: \"I would like to inquire...\"). The \"Send Message\" button is still visible and active.\n*   **No Confirmation:** There is no green checkmark, success message (e.g., \"Message sent successfully!\"), or any toast notification popup indicating that the form was processed.\n*   **Visual Context:** The page looks exactly as it would *before* the user clicked the submit button, or it could represent a state where the button was just clicked and the page hasn't refreshed or updated with a confirmation yet.\n\nIn a typical successful submission scenario, you would expect to see either a success message replacing the form, a modal popup, or a temporary notification (toast) appearing on the screen. None of these are present here.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1788807162,
+  "id": "20260908025239999d1300b1d3450e",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260908025239999d1300b1d3450e",
+  "usage": {
+    "completion_tokens": 212,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 913,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1125
+  }
+}

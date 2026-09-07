@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "1) **Yes**, there are 3 project cards with real construction photos (residential buildings).\n2) **Yes**, the Compliance/Certifications section is completely gone.\n3) **Yes**, contract values and years are removed from the project cards (only location and description remain).\n4) **Yes**, the navigation is missing 'Compliance' (only Home, About, Services, Projects, Equipment, Contact are present).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1788811908,
+  "id": "202609080411437b3da8c968a5496e",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202609080411437b3da8c968a5496e",
+  "usage": {
+    "completion_tokens": 87,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5985,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 6072
+  }
+}
