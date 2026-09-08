@@ -30,6 +30,9 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Build static site
+        env:
+          # Use "" instead when the custom domain is live at the site root
+          BASE_PATH: /emrais-engineering
         run: bun run build
 
       - name: Add .nojekyll

@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { CheckCircle2, MapPin } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { assetPath } from "@/lib/paths";
 
 interface ProjectCard {
   image: string;
@@ -102,7 +103,7 @@ export function StackedProjects() {
               <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/20 bg-brand-dark">
                 {/* Project image */}
                 <img
-                  src={project.image}
+                  src={assetPath(project.image)}
                   alt={project.title}
                   className="w-full h-full object-cover"
                 />

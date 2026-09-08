@@ -1,6 +1,7 @@
 import { ChevronRight, Mail, MapPin, Phone } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { companyData, navLinks } from "@/lib/company-data";
+import { assetPath } from "@/lib/paths";
 
 export function SiteFooter() {
   return (
@@ -10,7 +11,7 @@ export function SiteFooter() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="/emrais-logo.png"
+                src={assetPath("/emrais-logo.png")}
                 alt="Emrais Engineering Services Logo"
                 className="h-14 w-14 object-contain rounded-full bg-white p-1"
               />

@@ -2,6 +2,7 @@ import { CheckCircle2, Clock, MapPin } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { projects } from "@/lib/company-data";
+import { assetPath } from "@/lib/paths";
 
 export function ProjectsSection() {
   return (
@@ -30,7 +31,7 @@ export function ProjectsSection() {
             >
               <div className="relative h-56 overflow-hidden">
                 <img
-                  src={project.image}
+                  src={assetPath(project.image)}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />

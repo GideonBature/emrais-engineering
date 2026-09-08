@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { navLinks } from "@/lib/company-data";
+import { assetPath } from "@/lib/paths";
 
 export function SiteHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -26,7 +27,7 @@ export function SiteHeader() {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-3 group">
           <img
-            src="/emrais-logo.png"
+            src={assetPath("/emrais-logo.png")}
             alt="Emrais Engineering Services Logo"
             className="h-12 w-12 md:h-14 md:w-14 object-contain rounded-full ring-2 ring-white shadow-md group-hover:scale-105 transition-transform"
           />

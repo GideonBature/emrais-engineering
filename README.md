@@ -52,10 +52,12 @@ This repo is set up for automatic deploys on push to `main`.
 3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
 4. Push to `main` (or run the **Deploy to GitHub Pages** workflow manually).
 5. After the first successful deploy, the site will be available at:
-   - `https://gideonbature.github.io/emrais-engineering/` (until the custom domain is active)
+   - `https://gideonbature.github.io/emrais-engineering/`
    - `https://emrais-engineering.com` (once DNS is configured)
 
-> Custom domain hosting uses an empty `basePath`, so assets load correctly at the domain root. Do not enable a project `basePath` while using `emrais-engineering.com`.
+> **Important:** Pages must use **Source: GitHub Actions** (not “Deploy from a branch”). Branch deploys serve the README instead of the built site.
+>
+> While using the `github.io/emrais-engineering` URL, the build uses `BASE_PATH=/emrais-engineering`. When your custom domain is live at the root, set `BASE_PATH: ""` in `.github/workflows/deploy.yml`.
 
 ## Map a custom domain
 
