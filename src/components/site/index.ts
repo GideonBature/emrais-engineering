@@ -1,0 +1,9 @@
+export { SiteHeader } from "./header";
+export { HeroSection } from "./hero";
+export { StatsSection } from "./stats";
+export { AboutSection } from "./about";
+export { ServicesSection } from "./services";
+export { ProjectsSection } from "./projects";
+export { EquipmentSection } from "./equipment";
+export { ContactSection } from "./contact";
+export { SiteFooter } from "./footer";
