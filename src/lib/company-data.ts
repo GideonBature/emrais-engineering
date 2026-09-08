@@ -131,6 +131,54 @@ export const services = [
       "General contracts",
     ],
   },
+  {
+    title: "General Construction",
+    icon: "Construction",
+    description:
+      "End-to-end general construction services covering civil works, building construction, site development, and project delivery. We execute works to specification, on schedule, and to the highest quality standards.",
+    features: [
+      "Civil & building works",
+      "Site development",
+      "Project delivery & management",
+      "Quality-assured workmanship",
+    ],
+  },
+  {
+    title: "Road Construction",
+    icon: "Route",
+    description:
+      "Design and construction of roads, access routes, and related civil infrastructure. From earthworks and pavement to drainage and finishing, we deliver durable road networks that serve communities and commerce.",
+    features: [
+      "Road & access construction",
+      "Earthworks & pavement",
+      "Drainage systems",
+      "Infrastructure finishing",
+    ],
+  },
+  {
+    title: "Car Sales and Business",
+    icon: "Car",
+    description:
+      "Automotive sales and related business services, connecting clients with reliable vehicles and commercial auto solutions. We support both personal and business needs with transparent, professional service.",
+    features: [
+      "Vehicle sales",
+      "Commercial auto solutions",
+      "Business fleet support",
+      "Transparent transactions",
+    ],
+  },
+  {
+    title: "Real Estate",
+    icon: "Home",
+    description:
+      "Real estate development, property acquisition support, and investment-focused residential and commercial opportunities. We help clients identify, develop, and deliver property projects with lasting value.",
+    features: [
+      "Property development",
+      "Residential & commercial projects",
+      "Investment advisory support",
+      "Land & property solutions",
+    ],
+  },
 ];
 
 export const projects = [

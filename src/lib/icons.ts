@@ -16,6 +16,8 @@ import {
   Construction,
   Anchor,
   Forklift,
+  Route,
+  Home,
   type LucideIcon,
 } from "lucide-react";
 
@@ -37,4 +39,6 @@ export const iconMap: Record<string, LucideIcon> = {
   Construction,
   Anchor,
   Forklift,
+  Route,
+  Home,
 };
