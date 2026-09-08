@@ -72,10 +72,42 @@ export function StackedProjects() {
     };
   };
 
+  // Top card sits at offset 0 — slight tilt matches getCardStyle(offset 0)
+  const topCardTransform =
+    "translateY(0px) translateX(0px) rotate(-2.2deg) scale(1)";
+
   return (
     <div className="relative w-full h-[540px] hidden lg:block">
       {/* Stacked cards container */}
       <div className="relative w-full h-full">
+        {/* Continuous halo — mounted once so spin never restarts on shuffle */}
+        <div
+          className="absolute inset-0 pointer-events-none z-20"
+          style={{ transform: topCardTransform }}
+          aria-hidden
+        >
+          <div
+            className="absolute -inset-[10px] rounded-[1.85rem] overflow-hidden"
+            style={{
+              padding: "10px",
+              WebkitMask:
+                "linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)",
+              WebkitMaskComposite: "xor",
+              mask: "linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)",
+              maskComposite: "exclude",
+            }}
+          >
+            <div
+              className="absolute inset-[-70%] animate-spin-slow"
+              style={{
+                background:
+                  "conic-gradient(from 0deg, transparent 0deg, transparent 200deg, rgba(212, 160, 23, 0.22) 235deg, rgba(255, 236, 180, 0.45) 270deg, rgba(255, 248, 220, 0.55) 285deg, rgba(212, 160, 23, 0.4) 305deg, rgba(212, 160, 23, 0.18) 330deg, transparent 360deg)",
+                filter: "blur(8px)",
+              }}
+            />
+          </div>
+        </div>
+
         {projects.map((project, index) => {
           const style = getCardStyle(index);
           const isTop = style.zIndex === projects.length;
@@ -86,20 +118,6 @@ export function StackedProjects() {
               className="absolute inset-0 transition-all duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
               style={style}
             >
-              {/* Slim, diffuse traveling light hugging the border — only on the top card */}
-              {isTop && (
-                <div className="absolute -inset-[3px] rounded-[1.55rem] pointer-events-none overflow-hidden">
-                  <div
-                    className="absolute inset-[-60%] animate-spin-slow"
-                    style={{
-                      background:
-                        "conic-gradient(from 0deg, transparent 0deg, transparent 220deg, rgba(212, 160, 23, 0.85) 270deg, rgba(255, 245, 210, 0.7) 285deg, rgba(212, 160, 23, 0.85) 300deg, transparent 360deg)",
-                      filter: "blur(1.5px)",
-                    }}
-                  />
-                </div>
-              )}
-
               <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/20 bg-brand-dark">
                 {/* Project image */}
                 <img

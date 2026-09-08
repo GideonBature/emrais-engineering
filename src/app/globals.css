@@ -46,7 +46,7 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   /* Custom animations for stacked project cards */
-  --animate-spin-slow: spin-slow 6s linear infinite;
+  --animate-spin-slow: spin-slow 8s linear infinite;
 }
 
 @keyframes spin-slow {
