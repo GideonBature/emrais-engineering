@@ -72,42 +72,10 @@ export function StackedProjects() {
     };
   };
 
-  // Top card sits at offset 0 — slight tilt matches getCardStyle(offset 0)
-  const topCardTransform =
-    "translateY(0px) translateX(0px) rotate(-2.2deg) scale(1)";
-
   return (
     <div className="relative w-full h-[540px] hidden lg:block">
       {/* Stacked cards container */}
       <div className="relative w-full h-full">
-        {/* Continuous halo — mounted once so spin never restarts on shuffle */}
-        <div
-          className="absolute inset-0 pointer-events-none z-20"
-          style={{ transform: topCardTransform }}
-          aria-hidden
-        >
-          <div
-            className="absolute -inset-[10px] rounded-[1.85rem] overflow-hidden"
-            style={{
-              padding: "10px",
-              WebkitMask:
-                "linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)",
-              WebkitMaskComposite: "xor",
-              mask: "linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)",
-              maskComposite: "exclude",
-            }}
-          >
-            <div
-              className="absolute inset-[-70%] animate-spin-slow"
-              style={{
-                background:
-                  "conic-gradient(from 0deg, transparent 0deg, transparent 200deg, rgba(212, 160, 23, 0.22) 235deg, rgba(255, 236, 180, 0.45) 270deg, rgba(255, 248, 220, 0.55) 285deg, rgba(212, 160, 23, 0.4) 305deg, rgba(212, 160, 23, 0.18) 330deg, transparent 360deg)",
-                filter: "blur(8px)",
-              }}
-            />
-          </div>
-        </div>
-
         {projects.map((project, index) => {
           const style = getCardStyle(index);
           const isTop = style.zIndex === projects.length;
@@ -169,12 +137,39 @@ export function StackedProjects() {
         })}
       </div>
 
-      {/* Floating accent badge (outside the stack) */}
-      <div className="absolute -top-5 -right-5 w-20 h-20 rounded-2xl bg-gold shadow-xl flex items-center justify-center rotate-6 z-30 pointer-events-none">
-        <div className="text-center text-brand-dark">
-          <div className="text-2xl font-bold leading-none">★</div>
-          <div className="text-[9px] font-bold uppercase tracking-wide mt-1">
-            Our Work
+      {/* Floating accent badge with continuous soft halo */}
+      <div className="absolute -top-5 -right-5 z-30 pointer-events-none rotate-6">
+        <div className="relative w-20 h-20">
+          {/* Soft diffuse traveling halo around the static badge */}
+          <div
+            className="absolute -inset-[12px] rounded-[1.65rem] overflow-hidden"
+            aria-hidden
+            style={{
+              padding: "12px",
+              WebkitMask:
+                "linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)",
+              WebkitMaskComposite: "xor",
+              mask: "linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)",
+              maskComposite: "exclude",
+            }}
+          >
+            <div
+              className="absolute inset-[-80%] animate-spin-slow"
+              style={{
+                background:
+                  "conic-gradient(from 0deg, transparent 0deg, transparent 195deg, rgba(255, 236, 180, 0.25) 230deg, rgba(255, 250, 230, 0.7) 270deg, rgba(255, 255, 255, 0.85) 285deg, rgba(255, 236, 180, 0.55) 305deg, rgba(212, 160, 23, 0.2) 335deg, transparent 360deg)",
+                filter: "blur(7px)",
+              }}
+            />
+          </div>
+
+          <div className="relative w-full h-full rounded-2xl bg-gold shadow-xl flex items-center justify-center">
+            <div className="text-center text-brand-dark">
+              <div className="text-2xl font-bold leading-none">★</div>
+              <div className="text-[9px] font-bold uppercase tracking-wide mt-1">
+                Our Work
+              </div>
+            </div>
           </div>
         </div>
       </div>
