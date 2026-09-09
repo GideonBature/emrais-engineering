@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
-// Project site URL: https://gideonbature.github.io/emrais-engineering/
-// When mapping a custom domain at the site root, set BASE_PATH="" in the workflow.
-const basePath = process.env.BASE_PATH ?? "/emrais-engineering";
+// Custom domain (emrais.com.ng) is served from the site root — no basePath.
+// For local github.io-only testing without a domain, set BASE_PATH=/emrais-engineering.
+const basePath = process.env.BASE_PATH ?? "";
 
 const nextConfig: NextConfig = {
   output: "export",

@@ -31,8 +31,8 @@ jobs:
 
       - name: Build static site
         env:
-          # Use "" instead when the custom domain is live at the site root
-          BASE_PATH: /emrais-engineering
+          # Empty for custom domain at root (emrais.com.ng)
+          BASE_PATH: ""
         run: bun run build
 
       - name: Add .nojekyll

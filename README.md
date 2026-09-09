@@ -2,7 +2,7 @@
 
 Corporate website for Emrais Engineering Services Limited — Engineering Services, General Supplies, and General Contracts.
 
-**Live domain (after DNS setup):** [https://emrais-engineering.com](https://emrais-engineering.com)
+**Live domain:** [https://emrais.com.ng](https://emrais.com.ng)
 
 ## Stack
 
@@ -52,22 +52,20 @@ This repo is set up for automatic deploys on push to `main`.
 3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
 4. Push to `main` (or run the **Deploy to GitHub Pages** workflow manually).
 5. After the first successful deploy, the site will be available at:
-   - `https://gideonbature.github.io/emrais-engineering/`
-   - `https://emrais-engineering.com` (once DNS is configured)
+   - `https://emrais.com.ng` (once DNS is configured)
+   - `https://gideonbature.github.io/emrais-engineering/` (redirects after the custom domain is active)
 
-> **Important:** Pages must use **Source: GitHub Actions** (not “Deploy from a branch”). Branch deploys serve the README instead of the built site.
+> **Important:** Pages must use **Source: GitHub Actions** (not “Deploy from a branch”).
 >
-> While using the `github.io/emrais-engineering` URL, the build uses `BASE_PATH=/emrais-engineering`. When your custom domain is live at the root, set `BASE_PATH: ""` in `.github/workflows/deploy.yml`.
+> Custom domain builds use an empty `BASE_PATH` so assets load at the domain root.
 
 ## Map a custom domain
 
-`public/CNAME` already contains `emrais-engineering.com`. That file is copied into the static build and tells GitHub which domain to serve.
+`public/CNAME` is set to `emrais.com.ng`.
 
 ### 1. DNS records
 
-At your domain registrar (Namecheap, GoDaddy, Cloudflare, etc.), add:
-
-**Option A — apex + www (recommended)**
+At your domain registrar, add:
 
 | Type | Host | Value |
 |------|------|--------|
@@ -77,24 +75,17 @@ At your domain registrar (Namecheap, GoDaddy, Cloudflare, etc.), add:
 | A | `@` | `185.199.111.153` |
 | CNAME | `www` | `gideonbature.github.io` |
 
-**Option B — subdomain only** (e.g. `www.emrais-engineering.com`)
-
-| Type | Host | Value |
-|------|------|--------|
-| CNAME | `www` | `gideonbature.github.io` |
-
-Then change `public/CNAME` to `www.emrais-engineering.com`.
-
 ### 2. GitHub Pages custom domain
 
-1. **Settings → Pages → Custom domain**
-2. Enter `emrais-engineering.com`
-3. Save, wait for DNS check to pass
-4. Enable **Enforce HTTPS** (may take a few minutes after DNS propagates)
+Already configured as `emrais.com.ng` in repo Pages settings. After DNS propagates:
+
+1. Open **Settings → Pages**
+2. Confirm the domain shows a green check
+3. Enable **Enforce HTTPS**
 
 ### 3. Different domain?
 
-Edit `public/CNAME` to your domain, update `openGraph.url` in `src/app/layout.tsx`, commit, and push. Then point DNS as above.
+Edit `public/CNAME`, update `openGraph.url` in `src/app/layout.tsx`, commit, and push. Then point DNS as above.
 
 ## Content updates
 

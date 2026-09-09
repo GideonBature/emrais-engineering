@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Emrais Engineering Services Limited",
     description:
       "Premier Engineering Services, General Supplies, and General Contracts. Transforming concepts into reality across Nigeria.",
-    url: "https://emrais-engineering.com",
+    url: "https://emrais.com.ng",
     siteName: "Emrais Engineering Services Limited",
     type: "website",
     locale: "en_NG",
